@@ -1,6 +1,6 @@
 # ONEFlux docker images
 
-Automating deployment of the ONEFlux processing pipeline by BlueGreen Labs.
+Automating deployment of the [ONEFlux processing pipeline](https://github.com/fluxnet/ONEFlux) by BlueGreen Labs.
 
 ## Interactive image
 
