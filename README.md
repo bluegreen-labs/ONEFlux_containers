@@ -50,7 +50,7 @@ codebase which relies on old python 2.7 code. The latter does not allow for
 easy processing of data. It is stated that supposedly python 3.5+ should be
 functional, but in reality it isn't. Below are the instructions to build the
 current image and a preview of the simple layout in Streamlit. BlueGreen Labs
-proud itself in providing accessible software solutions to science problems
+prouds itself in providing accessible software solutions to science problems
 but does not clean up bad data governance policies. Any commits to resolve this
 issue by getting a functional image on python 3.5+ are welcome.
 
