@@ -34,15 +34,15 @@ RUN apt-get -q update && \
     rm -rf /var/lib/apt/lists/*
 
 # Download the MCR from MathWorks site an install with -mode silent
-#RUN mkdir /mcr-install && \
-#    mkdir /opt/mcr && \
-#    cd /mcr-install && \
-#    wget --no-check-certificate -q https://ssd.mathworks.com/supportfiles/downloads/R2018a/deployment_files/R2018a/installers/glnxa64/MCR_R2018a_glnxa64_installer.zip && \
-#    unzip -q MCR_R2018a_glnxa64_installer.zip && \
-#    rm -f MCR_R2018a_glnxa64_installer.zip && \
-#    ./install -destinationFolder /opt/mcr -agreeToLicense yes -mode silent && \
-#    cd / && \
-#    rm -rf mcr-install
+RUN mkdir /mcr-install && \
+    mkdir /opt/mcr && \
+    cd /mcr-install && \
+    wget --no-check-certificate -q https://ssd.mathworks.com/supportfiles/downloads/R2018a/deployment_files/R2018a/installers/glnxa64/MCR_R2018a_glnxa64_installer.zip && \
+    unzip -q MCR_R2018a_glnxa64_installer.zip && \
+    rm -f MCR_R2018a_glnxa64_installer.zip && \
+    ./install -destinationFolder /opt/mcr -agreeToLicense yes -mode silent && \
+    cd / && \
+    rm -rf mcr-install
 
 # Installing oneflux from github
 RUN export GIT_SSL_NO_VERIFY=1 && \
