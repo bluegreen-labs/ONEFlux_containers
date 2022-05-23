@@ -45,10 +45,7 @@ docker image location `/data/`.
 
 To track progress more easily a streamlit GUI based wrapper is provided to 
 the processing. Sadly, I have given up on developing this further than the state
-it is currently in (non-functional) due to the neglect of the underlying
-codebase which relies on old python 2.7 code. The latter does not allow for
-
-easy processing of data. Technically it should all work, yet it doesn't, with
+it is currently in (non-functional). Technically it should all work, yet it doesn't due to ONEFlux relying on old python 2.7 code, with
 no easy fix it seems. Below are the instructions to build the current image and a preview of the simple layout in Streamlit under python 3.5+. Any commits to resolve the issue by getting a functional image on python 3.5+ are welcome.
 
 ```bash
